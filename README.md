@@ -94,7 +94,7 @@ Unless otherwise stated, for each question:
 The first 5 rows of your resulting DataFrame should look something like this:
   
 <!-- BUILT-WITH-NOSQL-AND-MONGODB -->
-## Built with NOSQL and MONGODB Framework 
+## Built with NoSQL and MongoDB Framework 
 
 - NoSQL (Not Only SQL) is a broad class of database management systems that are designed to handle large volumes of data with more flexibility than traditional relational databases. They often use key-value stores, document stores, wide-column stores, or graph databases to store and manage data.
 
