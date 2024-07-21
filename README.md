@@ -96,7 +96,8 @@ Unless otherwise stated, for each question:
 
 The first 5 rows of your resulting DataFrame should look something like this:
 
-![Uploading image.png…]()
+<img width="578" alt="image" src="https://github.com/user-attachments/assets/35c5512e-3b3b-456b-953e-2cec5c5399ef">
+
 
   
 <!-- BUILT-WITH-NOSQL-AND-MONGODB -->
