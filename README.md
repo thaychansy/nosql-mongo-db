@@ -50,8 +50,36 @@ The magazine editors have some requested modifications for the database before y
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the following information to the database:
 
-   <img width="560" alt="image" src="https://github.com/user-attachments/assets/18987a7a-e36e-47b5-9d08-207183731cfa">
-
+```
+new_restaurant = {
+    "BusinessName":"Penang Flavours",
+    "BusinessType":"Restaurant/Cafe/Canteen",
+    "BusinessTypeID":"",
+    "AddressLine1":"Penang Flavours",
+    "AddressLine2":"146A Plumstead Rd",
+    "AddressLine3":"London",
+    "AddressLine4":"",
+    "PostCode":"SE18 7DY",
+    "Phone":"",
+    "LocalAuthorityCode":"511",
+    "LocalAuthorityName":"Greenwich",
+    "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",
+    "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",
+    "scores":{
+        "Hygiene":"",
+        "Structural":"",
+        "ConfidenceInManagement":""
+    },
+    "SchemeType":"FHRS",
+    "geocode":{
+        "longitude":"0.08384000",
+        "latitude":"51.49014200"
+    },
+    "RightToReply":"",
+    "Distance":4623.9723280747176,
+    "NewRatingPending":True
+}
+```
 
 3. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
 
@@ -95,6 +123,26 @@ Unless otherwise stated, for each question:
 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
 
 The first 5 rows of your resulting DataFrame should look something like this:
+
+```
+# Create a pipeline that:
+# 1. Matches establishments with a hygiene score of 0
+match_query = {"$match": {"scores.Hygiene": 0}}
+
+# 2. Groups the matches by Local Authority
+group_query = {"$group": {"_id": "$LocalAuthorityName", "count": {"$sum": 1}}}
+
+# 3. Sorts the matches from highest to lowest
+sort_values = {"$sort": {"count": -1, "_id": 1}}
+
+# Print the number of documents in the result
+pipeline = [match_query, group_query, sort_values]
+results = list(establishments.aggregate(pipeline))
+print("Number of documents in the result:", len(results))
+
+# Print the first 10 results
+pprint(results[0:10])
+```
 
 <img width="578" alt="image" src="https://github.com/user-attachments/assets/35c5512e-3b3b-456b-953e-2cec5c5399ef">
 
