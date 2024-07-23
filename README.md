@@ -42,6 +42,8 @@ Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
 
 5. Assign the `establishments` collection to a variable to prepare the collection for use.
 
+<img width="942" src="python_code_run_pt1.gif" alt="python code part 1" />
+
 ## Part 2: Update the Database
 
 Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
@@ -144,9 +146,10 @@ print("Number of documents in the result:", len(results))
 pprint(results[0:10])
 ```
 
-<img width="578" alt="image" src="https://github.com/user-attachments/assets/35c5512e-3b3b-456b-953e-2cec5c5399ef">
 
-
+<img width="942" src="python_code_run_pt1.gif" alt="python code part 1" />
+  
+<p  align="right">(<a  href="#readme-top">back to top</a>)</p>
   
 <!-- BUILT-WITH-NOSQL-AND-MONGODB -->
 ## Built with NoSQL and MongoDB Framework 
