@@ -147,7 +147,7 @@ pprint(results[0:10])
 ```
 
 
-<img width="942" src="Resources/python_code_run_pt1.gif" alt="python code part 1" />
+<img width="942" src="Resources/python_code_run_pt2.gif" alt="python code part 2" />
   
 <p  align="right">(<a  href="#readme-top">back to top</a>)</p>
   
