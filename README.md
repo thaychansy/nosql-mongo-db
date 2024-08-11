@@ -42,7 +42,7 @@ Use `NoSQL_setup_starter.ipynb` for this section of the challenge.
 
 5. Assign the `establishments` collection to a variable to prepare the collection for use.
 
-<img width="942" src="Resources/python_code_run_pt1.gif" alt="python code part 1" />
+<kbd> <img width="942" src="Resources/python_code_run_pt1.gif" alt="python code part 1" /> </kbd>
 
 ## Part 2: Update the Database
 
@@ -147,7 +147,7 @@ pprint(results[0:10])
 ```
 
 
-<img width="942" src="Resources/python_code_run_pt2.gif" alt="python code part 2" />
+<kbd> <img width="942" src="Resources/python_code_run_pt2.gif" alt="python code part 2" /> </kbd>
   
 <p  align="right">(<a  href="#readme-top">back to top</a>)</p>
   
