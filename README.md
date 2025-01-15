@@ -1,4 +1,4 @@
-<h1  align="center">NoSQL Challenge</h1>
+<h1  align="center">NoSQL MongoDB</h1>
 <a name="readme-top"></a>
 
 
